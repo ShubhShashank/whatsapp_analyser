@@ -8,7 +8,7 @@ def quick():
     print('Welcome to my Whatsapp parser and analysier!\n\n')
     print('Currently this works for android phones only! \n(other phones use a different syntax \nif you could let me know what that is, that would be useful and probably a trivial extension to the parser)\n')
     
-    path=raw_input('Please type in the path of the text file containing your whatsapp message\n')
+    path=raw_input('Please type in the path of the text file containing your whatsapp messages\n')
     
     first=raw_input('What comes first day or month: type day if day/month/year and month if otherway round\n')
     print('\n\n\n')
