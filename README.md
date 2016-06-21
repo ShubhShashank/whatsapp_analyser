@@ -67,33 +67,34 @@ The main function here is what_parse(args)
 This is for visualising the messages
 
 
- Example: Let df be a dataframe which has daily events from March 2015 till June 2016 and we want to
-                investigate the frequency by month.
-                We note that by ignoring year and just looking at the month some months occur twice so this might
-                skew our data
+ Example: 
+ 
+ Let df be a dataframe which has daily events from March 2015 till June 2016 and we want to
+ investigate the frequency by month. We note that by ignoring year and just looking at the month
+ some months occur twice so this might skew our data
                 
-          Let 
+ Let 
 		  
-			>>t=visual(df,'month')
-          Now:
-            >>t.counts(False)=([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [1, 12])
-            >> t.counts(True)=([3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5], [[3, 12], [1, 5]])
-          Giving months 3-12 are in the previous year of months 1-5
+	t=visual(df,'month')
+Now:
+    t.counts(False)=([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [1, 12])
+    t.counts(True)=([3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5], [[3, 12], [1, 5]])
+Giving months 3-12 are in the previous year of months 1-5
 				
-			t also has the attributes:
-			>>t.df #Gives the dataframe
-			>> t.attr #picks out the attr from the dataframe in this example it would return a list of the month in
-						which each message was sent
-			>>t.attrstring #eturns the attrstring here 'month'
-			>> t.names #the names of the participants of the conversation
-			>> t.years #the years in which messages occor
-			>> t.plot() #Plots a given dataframe attribute
-							e.g. t=visual(df,'hour').plot()
-							plots a graph of events the number of events in each hour'''
-			>>t.plot_split_year() #Plots a given dataframe attribute like above but splits into different year
-									Going back to the t=visual(df,'month') example above, if you have more than twelwe months it
-									would probably be sensible to split into different years and not just add everything together which occurs
-									in a given month (however, if you have many years of data then maybe you might prefer not to)'
+t also has the attributes:
+	t.df #Gives the dataframe
+	t.attr #picks out the attr from the dataframe in this example it would return a list of the month in
+			#which each message was sent
+	t.attrstring #returns the attrstring here 'month'
+	t.names #the names of the participants of the conversation
+	t.years #the years in which messages occor
+	t.plot() #Plots a given dataframe attribute
+			 #e.g. t=visual(df,'hour').plot()
+			 #plots a graph of events the number of events in each hour'''
+	t.plot_split_year() #Plots a given dataframe attribute like above but splits into different year
+						#Going back to the t=visual(df,'month') example above, if you have more than twelwe months it
+						#would probably be sensible to split into different years and not just add everything together which occurs
+						#in a given month (however, if you have many years of data then maybe you might prefer not to)'
 
 
 				
