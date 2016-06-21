@@ -7,7 +7,9 @@ Python version 2.*
 
 ## Installation
 
-Easy way:  pip install whatsapp_analyser
+Easy way:  
+
+	pip install whatsapp_analyser
 
 Of course it can be done manually as well if required.
 
@@ -15,15 +17,14 @@ Of course it can be done manually as well if required.
 
 Quick use:
 
-from  whatsapp_analyser import quick_visual as q
-q.quick()
+	from  whatsapp_analyser import quick_visual as q
+	q.quick()
 
 
-More in depth
 
-Whatsapp_analyser has the modules:
+##Modules
 
-1. Whatsapp_parser.py:
+#Whatsapp_parser.py:
 
 The main function here is what_parse(args)
 
@@ -61,7 +62,7 @@ The main function here is what_parse(args)
         
     '''
 
-2. visual.py
+#visual.py
 
 This is for visualising the messages
 
@@ -71,23 +72,25 @@ This is for visualising the messages
                 We note that by ignoring year and just looking at the month some months occur twice so this might
                 skew our data
                 
-                Let t=visual(df,'month')
-                Now:
-                    t.counts(False)=([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [1, 12])
-                    t.counts(True)=([3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5], [[3, 12], [1, 5]])
-                giving months 3-12 are in the previous year of months 1-5
+          Let 
+		  
+			>>t=visual(df,'month')
+          Now:
+            >>t.counts(False)=([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [1, 12])
+            >> t.counts(True)=([3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5], [[3, 12], [1, 5]])
+          Giving months 3-12 are in the previous year of months 1-5
 				
-				t also has the attributes:
-				t.df : Gives the dataframe
-				t.attr : picks out the attr from the dataframe in this example it would return a list of the month in
+			t also has the attributes:
+			>>t.df #Gives the dataframe
+			>> t.attr #picks out the attr from the dataframe in this example it would return a list of the month in
 						which each message was sent
-				t.attrstring : returns the attrstring here 'month'
-				t.names : the names of the participants of the conversation
-				t.years : the years in which messages occor
-				t.plot() : Plots a given dataframe attribute
+			>>t.attrstring #eturns the attrstring here 'month'
+			>> t.names #the names of the participants of the conversation
+			>> t.years #the years in which messages occor
+			>> t.plot() #Plots a given dataframe attribute
 							e.g. t=visual(df,'hour').plot()
 							plots a graph of events the number of events in each hour'''
-				t.plot_split_year() : Plots a given dataframe attribute like above but splits into different year
+			>>t.plot_split_year() #Plots a given dataframe attribute like above but splits into different year
 									Going back to the t=visual(df,'month') example above, if you have more than twelwe months it
 									would probably be sensible to split into different years and not just add everything together which occurs
 									in a given month (however, if you have many years of data then maybe you might prefer not to)'
