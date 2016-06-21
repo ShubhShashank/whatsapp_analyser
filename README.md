@@ -15,19 +15,19 @@ Of course it can be done manually as well if required.
 
 Quick use:
 
-> from  whatsapp_analyser import quick_visual as q
-> q.quick()
+from  whatsapp_analyser import quick_visual as q
+q.quick()
 
 
 More in depth
 
-#Whatsapp_analyser has the modules:
+Whatsapp_analyser has the modules:
 
 1. Whatsapp_parser.py:
 
 The main function here is what_parse(args)
 
-what_parse(messages_file,number_of_participants=0, output_option=2, dayfirst=True)
+	what_parse(messages_file,number_of_participants=0, output_option=2, dayfirst=True)
 
     '''This Parses the whatsapp messages into a user choosen format
     
@@ -94,8 +94,9 @@ This is for visualising the messages
 
 
 				
-				3. quick_visual.py
-4.__init__.py
+3. quick_visual.py
+
+4. __init__.py
 
 
 ## Licensing
