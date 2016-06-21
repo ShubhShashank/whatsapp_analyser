@@ -77,11 +77,14 @@ This is for visualising the messages
 		  
 	t=visual(df,'month')
  Now:
+ 
     t.counts(False)=([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [1, 12])
     t.counts(True)=([3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5], [[3, 12], [1, 5]])
+	
  Giving months 3-12 are in the previous year of months 1-5
 				
  t also has the attributes:
+ 
 	t.df #Gives the dataframe
 	t.attr #picks out the attr from the dataframe in this example it would return a list of the month in
 			#which each message was sent
