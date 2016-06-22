@@ -13,6 +13,18 @@ Easy way:
 
 Of course it can be done manually as well if required.
 
+## How to find whatsapp messages
+
+In your whatsapp app on your phone
+
+* Click on a particular chat
+* Click on the three dots next
+* Click on more
+* Click email chat 
+* Email to yourself (DO NOT ATTACH MEDIA FILES!!)
+* download and place text file into a folder and remember the path
+* if you can change the python working directory to the folder containing the text file then you only need to types its name below
+
 ##Examples:
 
 Quick use:
@@ -26,12 +38,13 @@ More in depth:
 	from  whatsapp_analyser import visual as v
 	
 	df=wp.what_parse('C:\Users\Username\Documents\Some folder\messages.txt') #replace with your path
-	#it is worth noting that you might need to use two backslash if you have a file or folder with
-	#a command in e.g. Some folder\\n.txt  [\n gives new line by itself]
+
+It is worth noting that you might need to use two backslashs if you have a file or folder with a command in
+it e.g. Some folder\\n.txt  [\n gives new line by itself].
 	
 	v.visual(df,'month').plot()
 
-Can replace 'month' with many of the pandas index attributes e.g. 'week', 'dayofweek', 'year', 'quarter', 'minute'
+Can replace 'month' with many of the pandas index attributes e.g. 'week', 'dayofweek', 'year', 'quarter', 'minute',
 'dayofyear'. However, some might get a bit squashed in the graphs!
 
 Finally, there is an alternate plot which splits everything into separate years and then does the plotting:
