@@ -108,6 +108,7 @@ def whatsapp_to_csv(messages_file):
                     x=temp3[1]
                     temp3[1]= filter(lambda k: k in string.printable, x)
                     temp.append(' '.join(temp3[0].split()))
+                    temp[2]=filter(lambda k: k in string.printable, temp[2])
                     if "\n" in temp3[1]:
                         temp.append(temp3[1].split("\n",1)[0])
                     else:
