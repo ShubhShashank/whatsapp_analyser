@@ -19,7 +19,26 @@ Quick use:
 
 	from  whatsapp_analyser import quick_visual as q
 	q.quick()
+	
+More in depth:
 
+	from  whatsapp_analyser import whatsapp_parser as wp
+	from  whatsapp_analyser import visual as v
+	
+	df=wp.what_parse('C:\Users\Username\Documents\Some folder\messages.txt') #replace with your path
+	#it is worth noting that you might need to use two backslash if you have a file or folder with
+	#a command in e.g. Some folder\\n.txt  [\n gives new line by itself]
+	
+	v.visual(df,'month').plot()
+
+Can replace 'month' with many of the pandas index attributes e.g. 'week', 'dayofweek', 'year', 'quarter', 'minute'
+'dayofyear'. However, some might get a bit squashed in the graphs!
+
+Finally, there is an alternate plot which splits everything into separate years and then does the plotting:
+
+	v.visual(df,'month').plot_split_year()
+
+This is particually useful when you have over a years worth of messages.
 
 
 ##Modules
