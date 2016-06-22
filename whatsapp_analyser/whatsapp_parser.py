@@ -113,7 +113,7 @@ def whatsapp_to_csv(messages_file):
                         temp.append(temp3[1].split("\n",1)[0])
                     else:
                         temp.append(temp3[1])
-                    if len(temp[0])==10 and len(temp[1])==5:
+                    if len(temp[0])<=10 and len(temp[0])>=8 and len(temp[1])==5:
                         out_ALL.writerow(temp)
                     else: pass
                 except:

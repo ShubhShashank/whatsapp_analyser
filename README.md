@@ -18,10 +18,10 @@ Of course it can be done manually as well if required.
 In your whatsapp app on your phone
 
 * Click on a particular chat
-* Click on the three dots next
+* Click on the three dots
 * Click on more
 * Click email chat 
-* Email to yourself (DO NOT ATTACH MEDIA FILES!!)
+* Email to yourself (do not need to attach media files)
 * download and place text file into a folder and remember the path
 * if you can change the python working directory to the folder containing the text file then you only need to types its name below
 

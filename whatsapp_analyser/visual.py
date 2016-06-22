@@ -116,7 +116,9 @@ class visual:
                     j1=self.counts(True)[1][y][0]
                     j2=self.counts(True)[1][y][1]
                     jr=range(j1,j2+1)
-                    if N>24:
+                    if self.attrstring=='year':
+                        labels=labels+['%g'%i for i in jr]
+                    elif N>24:
                         labels=labels+['%g\n%g'%(i,year-2000) for i in jr]
                     else: labels=labels+['%g\n%g'%(i,year) for i in jr]
                     for i in jr:
@@ -133,7 +135,8 @@ class visual:
         ax.set_xticks(ind + (len(self.names)/2.0)*self.width)
         ax.set_xticklabels(labels) 
         ax.tick_params(axis=u'both', which=u'both',length=0)
-        ax.set_xlabel('%s\nyear'%self.attrstring.upper())
+        if self.attrstring=='year': ax.set_xlabel('%s'%self.attrstring.upper())
+        else: ax.set_xlabel('%s\nyear'%self.attrstring.upper())
         ax.legend([ax2[i][0] for i in range(len(self.names))], self.names,fancybox=True).get_frame().set_alpha(0.5)
         
         plt.plot()
