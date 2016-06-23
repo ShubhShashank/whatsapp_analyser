@@ -5,6 +5,8 @@ Whatsapp_analyser
 
 Python version 2.*
 
+For Python 3.* version: click on [this link](https://github.com/wsqsc735/whatsapp_analyser3)
+
 ## Installation
 
 Easy way:  
@@ -12,6 +14,8 @@ Easy way:
 	pip install whatsapp_analyser
 
 Of course it can be done manually as well if required.
+
+For Python 3.* version: click on [this link](https://github.com/wsqsc735/whatsapp_analyser3)
 
 ## How to find whatsapp messages
 
