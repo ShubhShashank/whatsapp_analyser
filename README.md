@@ -1,9 +1,11 @@
 Whatsapp_analyser
 ==========
 
-## Dependencies
+## Requirements
 
-Python version 2.*
+* Python version 2.*
+
+* Currently for Android phones only
 
 For Python 3.* version: click on [this link](https://github.com/wsqsc735/whatsapp_analyser3)
 
