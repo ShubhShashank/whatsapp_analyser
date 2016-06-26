@@ -5,12 +5,11 @@ import visual as v
 
 def quick():
 
-    print('Welcome to my Whatsapp parser and analysier!\n\n')
-    print('Currently this works for android phones only! \n(other phones use a different syntax \nif you could let me know what that is, that would be useful and probably a trivial extension to the parser)\n')
+    print('\nWelcome!\n')
     
-    path=raw_input('Please type in the path of the text file containing your whatsapp messages\n')
+    path=raw_input('Please type the path of the text file containing your whatsapp messages:\n')
     
-    first=raw_input('What comes first day or month: type day if day/month/year and month if otherway round\n')
+    first=raw_input('What is the date format in your whatsapp text file? \nType day if day/month/year and month if month/day/year.\n')
     print('\n\n\n')
     if first=='month':
         f=False

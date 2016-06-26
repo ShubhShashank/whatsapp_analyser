@@ -90,8 +90,10 @@ def whatsapp_to_csv(messages_file):
     try : messages=open(messages_file)
     except : 
         try : messages=open(messages_file+'.txt')
-        except : print("No such file or directory: '%s'. \n Please make sure it is located in your working directory or make sure the path is correct."\
-                        %messages_file)
+        except : 
+            raise IOError, "No such file or directory: '%s'. \n Please make sure it is located in your working directory or make sure the path is correct."\
+                        %messages_file
+                        
     
     with open("output_ALL.csv","wb") as output_ALL:
         out_ALL=csv.writer(output_ALL, delimiter=',',quoting=csv.QUOTE_ALL)
