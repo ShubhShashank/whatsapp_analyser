@@ -1,7 +1,7 @@
-Whatsapp_analyser
+Whatsapp_analyser 
 ==========
 
-## Requirements
+## Requirements (need whatsapp on an android phone)
 
 * Python version 2.*
 
@@ -19,7 +19,7 @@ Of course it can be done manually as well if required.
 
 For Python 3.* version: click on [this link](https://github.com/wsqsc735/whatsapp_analyser3)
 
-## How to find whatsapp messages
+## How to find whatsapp messages (Android phones only)
 
 In your whatsapp app on your phone
 
@@ -31,7 +31,7 @@ In your whatsapp app on your phone
 * download and place text file into a folder and remember the path
 * if you can change the python working directory to the folder containing the text file then you only need to types its name below
 
-##Examples:
+##Examples (Android phones only):
 
 Quick use:
 
